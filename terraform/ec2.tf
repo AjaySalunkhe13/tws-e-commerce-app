@@ -77,6 +77,8 @@ resource "aws_instance" "testinstance" {
   user_data = file("${path.module}/install_tools.sh")
   tags = {
     Name = "Jenkins-Automate"
+    Name = "Node-1"
+    Name = "Node-2"
   }
   root_block_device {
     volume_size = 20
